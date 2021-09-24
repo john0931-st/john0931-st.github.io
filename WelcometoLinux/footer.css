@@ -1,0 +1,19 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+.footer-bottom{
+    text-align:center ;
+    color: #999;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.socials a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 25px;
+}
+.socials a i{
+    color: #e7f2f4;
+    font-size: 40px;
+}

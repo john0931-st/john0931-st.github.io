@@ -1,0 +1,363 @@
+html {
+	overflow-y:auto;
+	scrollbar-color: black #8b0000;
+	scrollbar-width:thin;
+	width: auto;
+	height: auto;
+	border-radius: 50px;
+	font-family:courier,arial,helvetica;
+}
+p
+{
+	margin: 20px 20px;
+}
+.wavy
+{
+	position: relative;
+	text-align: center;
+	-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+.wavy span
+{
+	position: relative;
+	display: inline-block;
+	font-size: 48px;
+	color: #83e85a;
+	background-color: inherit;
+	margin: 30px 20px;
+	height: auto;
+	animation: animate 1s ease-in-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+	
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: translateY(0px);
+	}
+	20%
+	{
+		transform: translateY(-20px);
+	}
+	40%,100%
+	{
+		transform: translateY(0px);
+	}
+}
+.container
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: auto;
+	flex-wrap: wrap;
+	font-family:courier,arial,helvetica;
+}
+.container .box1
+{
+	position: relative;
+	width: 1000px;
+	height: auto;
+	color: white;
+	background: black;
+	margin: 20px 30px;
+	transition: 0.5s;
+}
+.container .box1:hover
+{
+	transform: translateY(-20px);
+}
+.container .box1::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+.container .box1::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#ffbc00,#ff0058);
+	filter: blur(30px);
+}
+.container .box1 span
+{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.container .box1 .content
+{
+	position: relative;
+	z-index: 10;
+	padding: 20px 40px;
+}
+.container .box2
+{
+	position: relative;
+	width: 1000px;
+	height: auto;
+	color: white;
+	background: black;
+	margin: 20px 30px;
+	transition: 0.5s;
+}
+.container .box2:hover
+{
+	transform: translateY(-20px);
+}
+.container .box2::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.container .box2::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(315deg,#03a9f4,#ff0058);
+	filter: blur(30px);
+}
+.container .box2 span
+{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.container .box2 .content
+{
+	position: relative;
+	z-index: 10;
+	padding: 20px 40px;
+}
+.container .box3
+{
+	position: relative;
+	width: 1000px;
+	height: auto;
+	color: white;
+	background: black;
+	margin: 20px 30px;
+	transition: 0.5s;
+}
+.container .box3:hover
+{
+	transform: translateY(-20px);
+}
+.container .box3::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.container .box3::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(315deg,#4dff03,#00d0ff);
+	filter: blur(30px);
+}
+.container .box3 span
+{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.container .box3 .content
+{
+	position: relative;
+	z-index: 10;
+	padding: 20px 40px;
+}
+.container .box4
+{
+	position: relative;
+	width: 1000px;
+	height: auto;
+	color: white;
+	background: black;
+	margin: 20px 30px;
+	transition: 0.5s;
+}
+.container .box4:hover
+{
+	transform: translateY(-20px);
+}
+.container .box4::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#FFAEBC,#ff0058);
+}
+.container .box4::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#FFAEBC,#ff0058);
+	filter: blur(30px);
+}
+.container .box4 span
+{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.container .box4 .content
+{
+	position: relative;
+	z-index: 10;
+	padding: 20px 40px;
+}
+.container .box5
+{
+	position: relative;
+	width: 1000px;
+	height: auto;
+	color: white;
+	background: black;
+	margin: 20px 30px;
+	transition: 0.5s;
+}
+.container .box5:hover
+{
+	transform: translateY(-20px);
+}
+.container .box5::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#2d6cdf,#ff0058);
+}
+.container .box5::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#2d6cdf,#ff0058);
+	filter: blur(30px);
+}
+.container .box5 span
+{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.container .box5 .content
+{
+	position: relative;
+	z-index: 10;
+	padding: 20px 40px;
+}
+.container .box6
+{
+	position: relative;
+	width: 1000px;
+	height: auto;
+	color: white;
+	background: black;
+	margin: 30px 30px;
+	transition: 0.5s;
+}
+.container .box6:hover
+{
+	transform: translateY(-20px);
+}
+.container .box6::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#cb3b3b,#ff0058);
+}
+.container .box6::after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg,#cb3b3b,#ff0058);
+	filter: blur(30px);
+}
+.container .box6 span
+{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background: rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.container .box6 .content
+{
+	position: relative;
+	z-index: 10;
+	padding: 20px 40px;
+}

@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/d62dd8308d.js" crossorigin="anonymous"></script>
   </head>
   <body class="u-body">
+    <div id="progressbar"></div>
     <section class="u-clearfix u-image u-section-1" id="sec-373d" data-image-width="474" data-image-height="237">
       <div class="u-clearfix u-sheet u-sheet-1">
         <img class="u-image u-image-default u-image-1" src="https://github.com/john0931-st/CvSU/blob/main/cvsu.png?raw=true" alt="" data-image-width="474" data-image-height="413">
@@ -73,6 +74,14 @@
         </div>
       </div>
     </section>
+    // progress scrollbar
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop(),
+		dh = $(document).height(),
+		wh = $(window).height();
+		scrollPercent = (scroll / (dh-wh)) * 100;
+		$('progressbar').css('height',scrollPercent + '%');
+	});
   </body>
   <div class="footer-bottom">
     <div class="socials">

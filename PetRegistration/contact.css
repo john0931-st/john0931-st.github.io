@@ -1,0 +1,62 @@
+.container7{
+    background-image: url('https://github.com/john0931-st/Pet-Registration-Form/blob/main/pet%20(2).jpg?raw=true');
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container7 input{
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    resize: vertical;
+    text-align: center;
+    font-size: 18px;
+}
+.PI4{
+    text-align: center;
+}
+.excel3{
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+}
+#button{
+    cursor: pointer;
+}
+#tblData3{
+    border-collapse: collapse;
+    width: 40%;
+    margin-top: 20px;
+    background-color: blanchedalmond;
+}
+#tblData3 th{
+    border: 2px solid black;
+    height: 25px;
+    font-size: 18px;
+}
+#tblData3 td{
+    border: 2px solid black;
+    text-align: center;
+    transition: all .25s ease-in-out;
+}
+#tblData3 tr:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+table .default3{
+    display: none;
+}
+.petbtn3 input{
+    width: 5%;
+    height: 35px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.petbtn3{
+    text-align: center;
+}
